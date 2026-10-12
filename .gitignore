@@ -1,0 +1,10 @@
+.DS_Store
+
+# Internal notes - not published
+context/*.md
+
+# Only publish the images the site uses (raw photos/videos stay local)
+asets/*
+!asets/kwp-logo-black-transparent.png
+!asets/125A9501.jpeg
+!asets/river-sky-small.jpeg
