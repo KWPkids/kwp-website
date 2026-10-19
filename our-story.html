@@ -7,39 +7,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/site.css" />
 <style>
-  :root{
-    --cream:#FFF8EC;
-    --ink:#1F2A24;
-    --ink-soft:#4B5A50;
-    --leaf:#1FB36B;
-    --leaf-deep:#0E8A52;
-    --sky:#2BA7E0;
-    --sun:#FFC32B;
-    --coral:#FF6B57;
-    --font-display:"Fredoka", system-ui, sans-serif;
-    --font-body:"Nunito", system-ui, sans-serif;
-    --pop:0 8px 0 rgba(31,42,36,.16);
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0;font-family:var(--font-body);color:var(--ink);background:var(--cream);
-    line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;
-  }
-  a{color:inherit;text-decoration:none;}
-  img{display:block;max-width:100%;}
-  .wrap{max-width:1120px;margin:0 auto;padding:0 28px;}
-  h1,h2{margin:0;font-family:var(--font-display);line-height:1.02;}
-  .btn{
-    display:inline-flex;align-items:center;gap:9px;font-family:var(--font-display);font-weight:600;
-    font-size:18px;border:3px solid var(--ink);border-radius:999px;padding:12px 22px;
-    background:var(--sun);box-shadow:var(--pop);
-  }
-  .btn:hover{transform:translateY(-3px);box-shadow:0 11px 0 rgba(31,42,36,.18);}
-  header{position:sticky;top:0;z-index:10;background:var(--cream);border-bottom:3px solid var(--ink);}
-  .nav{height:92px;display:flex;align-items:center;justify-content:space-between;gap:18px;}
-  .brand-logo{height:78px;width:276px;object-fit:contain;}
-  main{position:relative;padding:70px 0;}
+  .story-main{position:relative;padding:70px 0;}
   .blob{position:absolute;border-radius:50%;z-index:0;}
   .story{
     position:relative;z-index:1;display:grid;grid-template-columns:1.02fr .98fr;gap:34px;align-items:center;
@@ -51,12 +21,7 @@
     background:#D6EEFB;z-index:0;
   }
   .copy,.photo{position:relative;z-index:1;}
-  .eyebrow{
-    display:inline-flex;align-items:center;font-family:var(--font-display);font-weight:600;
-    font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--leaf-deep);
-    background:#fff;border:3px solid var(--ink);padding:5px 14px;border-radius:999px;box-shadow:var(--pop);
-  }
-  h1{font-size:clamp(42px,7vw,78px);margin:16px 0;color:var(--leaf-deep);}
+  .story h1{font-size:clamp(42px,7vw,78px);margin:16px 0;color:var(--leaf-deep);}
   .copy p{font-size:22px;font-weight:800;color:var(--ink-soft);margin:0;max-width:46ch;}
   .photo{
     border:4px solid var(--ink);border-radius:26px;background:var(--sun);padding:12px;
@@ -69,22 +34,15 @@
   }
   @media(max-width:850px){
     .story{grid-template-columns:1fr;padding:28px;}
-    .brand-logo{width:150px;height:58px;}
-    .nav{height:78px;}
   }
 </style>
 </head>
-<body>
-<header>
-  <div class="wrap nav">
-    <a href="./">
-      <img class="brand-logo" src="asets/kwp-logo-black-transparent.png" alt="KWP Kids Wildlife Project" />
-    </a>
-    <a class="btn" href="./">Back to KWP</a>
-  </div>
-</header>
+<body data-page="story">
 
-<main>
+<div id="site-header"></div>
+<script src="js/layout.js"></script>
+
+<main class="story-main">
   <div class="blob" style="width:380px;height:380px;background:#FFE3DC;left:-140px;top:20px;"></div>
   <div class="blob" style="width:300px;height:300px;background:#D6EEFB;right:-120px;bottom:40px;"></div>
   <div class="wrap">
@@ -101,5 +59,7 @@
     </section>
   </div>
 </main>
+
+<div id="site-footer"></div>
 </body>
 </html>
