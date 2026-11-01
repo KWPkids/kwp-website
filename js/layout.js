@@ -11,7 +11,7 @@
   // Section links point at the home page; on the home page itself they just scroll.
   var home = page === 'home' ? '' : './';
 
-  var SUBSCRIBE_URL = 'https://www.youtube.com/channel/UCIexokm6IozzPA6PbFiGcJA?sub_confirmation=1';
+  var SUBSCRIBE_URL = 'https://www.youtube.com/@KWPKids?sub_confirmation=1';
   var DONATE_URL = 'https://wwf2026.kidswildlifeproject.com';
   var CHANNEL_URL = 'https://www.youtube.com/@KWPKids';
 
