@@ -55,6 +55,8 @@ section[id]{scroll-margin-top:90px;}   /* keep anchored sections clear of the st
 .btn:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(31,42,36,.16);}
 .btn:focus-visible{outline:4px solid var(--sun);outline-offset:4px;}
 .btn-yt{background:var(--yt);color:#fff;}
+.btn-tt{background:#111;color:#fff;}
+.btn-tt svg{width:16px;height:16px;}
 .btn-sun{background:var(--sun);}
 .btn-leaf{background:var(--leaf);color:#fff;}
 .btn-grape{background:var(--grape);color:#fff;}
@@ -105,8 +107,8 @@ footer.site-footer{background:var(--leaf-deep);color:#EAFBF2;border-top:4px soli
   .wrap{padding:0 22px;}
   .nav-inner{gap:12px;}
   .brand-logo{width:140px;height:54px;}
-  .nav-actions .btn-yt .label{display:none;}   /* Subscribe becomes icon-only */
-  .nav-actions .btn-yt{padding:9px 11px;}
+  .nav-actions .btn-tt .label,.nav-actions .btn-yt .label{display:none;}   /* Subscribe becomes icon-only */
+  .nav-actions .btn-tt,.nav-actions .btn-yt{padding:9px 11px;}
 }
 @media(max-width:360px){
   .wrap{padding:0 16px;}
